@@ -1,0 +1,30 @@
+{
+    "name": "Yaz Lab II - Chrome Eklentisi",
+    "description": "Yazilim Laboratuvari II Dersi - 1. Proje",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["tabs", "activeTab"],
+    "offline_enabled": true,
+    "icons": {
+        "16": "img/16.png",
+        "48": "img/48.png",
+        "128": "img/128.png"
+    },
+    "background": {
+        "scripts": ["jquery/jquery-2.2.2.js", "background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_icon": "img/16.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["jquery/jquery-2.2.2.js", "jquery/jquery.highlight-5.js", "content.js"],
+            "css": ["css/content.css"],
+            "all_frames": false,
+            "run_at": "document_idle"
+        }
+    ]
+}

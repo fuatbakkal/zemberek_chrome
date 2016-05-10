@@ -1,0 +1,24 @@
+body {
+	min-width: 300px;
+	overflow-x: hidden;
+}
+
+#tablo {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#tablo th {
+	text-align: center;
+	padding: 4px;
+	border: 2px solid #ddd;
+}
+
+#tr_baslik {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #0080FF;
+	color: white;
+	border: 1px solid #ddd;
+}
